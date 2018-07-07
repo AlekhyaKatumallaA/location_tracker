@@ -26,6 +26,11 @@
 		</war>
 	</target>
 	
+	<target name=deploy>
+		<copy file="dist/AntExample.war" todir="/usr/local/apache-tomcat-8.5.31/webapps" overwrite="true">
+		</copy>	
+	</target>
+	
 	<target name="clean">
 		<delete dir="dist" />
 		<delete dir="build" />
